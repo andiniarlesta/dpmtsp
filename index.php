@@ -36,7 +36,7 @@
     <!-- Text Section -->
     <div class="max-w-xl space-y-6">
       <h2 class="text-5xl md:text-6xl text-gray-900 font-bold leading-snug font-times">
-        Sistem Informasi<br>Monitoring<br>Tugas Pegawai
+        Sistem Informasi Monitoring<br>Tugas Pegawai
       </h2>
       <p class="text-2xl text-gray-700">Aplikasi Monitoring Tugas</p>
       <a href="page/login.php" class="inline-block bg-blue-800 hover:bg-blue-900 px-8 py-3 rounded text-white font-bold">
@@ -46,7 +46,7 @@
 
     <!-- Image Section -->
     <div>
-      <img src="assets/bing.png" alt="Ilustrasi SIMANTAP" class="w-[600px] md:w-[600px] rounded-lg shadow-lg"/>
+      <img src="assets/bing.png" alt="Ilustrasi SIMANTAP" class="w-[600px] md:w-[600px]"/>
     </div>
   </div>
 
