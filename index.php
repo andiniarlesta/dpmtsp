@@ -21,14 +21,25 @@
       <h1 class="text-2xl md:text-3xl font-bold text-white">SIMANTAP</h1>
     </div>
     <ul class="flex space-x-8 md:space-x-16 font-medium text-base md:text-lg">
-      <li><a href="index.php" class="hover:border-b-2 border-white">Beranda</a></li>
-      <li><a href="tentang.php" class="hover:border-b-2 border-white">Tentang Kami</a></li>
-      <li>
-        <a href="contact.php" class="bg-[#006D77] hover:bg-[#005760] px-6 py-2 rounded-full text-white shadow-md transition">
-          Contact
-        </a>
-      </li>
-    </ul>
+  <li>
+    <a href="index.php" class="relative group text-white">
+      Beranda
+      <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+    </a>
+  </li>
+  <li>
+    <a href="tentang.php" class="relative group text-white">
+      Tentang Kami
+      <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+    </a>
+  </li>
+  <li>
+    <a href="contact.php" class="bg-[#09457E] hover:bg-[#005760] px-6 py-2 rounded-[50px_50px_50px_0px] text-white shadow-md transition">
+      Contact
+    </a>
+  </li>
+</ul>
+
   </nav>
 
   <!-- Hero Section -->
@@ -39,7 +50,7 @@
         Sistem Informasi Monitoring<br>Tugas Pegawai
       </h2>
       <p class="text-2xl text-gray-700">Aplikasi Monitoring Tugas</p>
-      <a href="page/login.php" class="inline-block bg-blue-800 hover:bg-blue-900 px-8 py-3 rounded text-white font-bold">
+      <a href="page/login.php" class="inline-block bg-blue-800 hover:bg-blue-900 px-8 py-3 rounded-[15px] text-white font-bold">
         LOGIN
       </a>
     </div>

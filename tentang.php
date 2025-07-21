@@ -7,17 +7,33 @@
 </head>
 <body class="bg-[#f5f5f5] min-h-screen font-sans">
 
-  <nav class="bg-[#5C7CFA] py-4 px-8 flex items-center justify-between">
-    <div class="flex items-center space-x-2">
-      <img src="assets/titik_tiga.png" alt="Logo" class="w-10 h-10"/>
-      <h1 class="text-2xl md:text-3xl font-bold text-white">SIMANTAP</h1>
-    </div>
-    <div class="space-x-6">
-      <a href="index.php" class="text-white hover:underline">Beranda</a>
-      <a href="tentang.php" class="text-white hover:underline">Tentang Kami</a>
-      <a href="contact.php" class="bg-[#1F2937] text-white px-4 py-1 rounded-full hover:bg-[#111827]">Contact</a>
-    </div>
-  </nav>
+  <!-- Navbar -->
+   <nav class="flex justify-between items-center px-10 py-4 bg-[#6B7EFF]">
+  <div class="flex items-center space-x-2">
+    <img src="assets/titik_tiga.png" alt="Logo" class="w-10 h-10"/>
+    <h1 class="text-2xl md:text-3xl font-bold text-white">SIMANTAP</h1>
+  </div>
+  <ul class="flex space-x-8 md:space-x-16 font-medium text-base md:text-lg">
+    <li>
+      <a href="index.php" class="relative group text-white">
+        Beranda
+        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+      </a>
+    </li>
+    <li>
+      <a href="tentang.php" class="relative group text-white">
+        Tentang Kami
+        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+      </a>
+    </li>
+    <li>
+      <a href="contact.php" class="bg-[#09457E] hover:bg-[#005760] px-6 py-2 rounded-[50px_50px_50px_0px] text-white shadow-md transition">
+        Contact
+      </a>
+    </li>
+  </ul>
+</nav>
+
 
   <section class="px-8 md:px-24 py-12 bg-[#f5f5f5]">
     <h1 class="text-center text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
@@ -52,7 +68,7 @@
       </div>
 
       <div class="flex justify-center">
-        <img src="assets/pngtree-vector-illustration-people-analyzing-data-using-computer-profession-picture-image_8436852.png" alt="Ilustrasi Diskusi" class="max-w-full h-auto">
+        <img src="assets/pngtree-vector-illustration-people-analyzing-data-using-computer-profession-picture-image_8436852.png" alt="Ilustrasi Diskusi" class="max-w-900 h-auto">
       </div>
     </div>
   </section>
