@@ -45,30 +45,30 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
       
-      <div>
+      <div class= "self-center">
         <h2 class="text-lg font-bold mb-4 text-gray-800">Tujuan Kami:</h2>
         <ul class="space-y-3 text-gray-700 text-sm">
           <li class="flex items-start gap-2">
-            <span>✅</span> 
+            <img src="assets/centang.png" alt="centang" class="w-[23px] h-auto">
             <span>Meningkatkan transparansi dalam pelaksanaan tugas.</span>
           </li>
           <li class="flex items-start gap-2">
-            <span>✅</span> 
+            <img src="assets/centang.png" alt="centang" class="w-[23px] h-auto">
             <span>Mempermudah koordinasi antar tim dan divisi.</span>
           </li>
           <li class="flex items-start gap-2">
-            <span>✅</span> 
+            <img src="assets/centang.png" alt="centang" class="w-[23px] h-auto"> 
             <span>Mengurangi keterlambatan dan miskomunikasi dalam pelaksanaan pekerjaan.</span>
           </li>
           <li class="flex items-start gap-2">
-            <span>✅</span> 
+            <img src="assets/centang.png" alt="centang" class="w-[23px] h-auto"> 
             <span>Mendorong budaya kerja yang disiplin, terukur, dan bertanggung jawab.</span>
           </li>
         </ul>
       </div>
 
       <div class="flex justify-center">
-        <img src="assets/pngtree-vector-illustration-people-analyzing-data-using-computer-profession-picture-image_8436852.png" alt="Ilustrasi Diskusi" class="max-w-900 h-auto">
+        <img src="assets/tentang_kami_3.png" alt="Ilustrasi Diskusi" class="w-[600px] h-auto">
       </div>
     </div>
   </section>

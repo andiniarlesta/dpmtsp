@@ -19,28 +19,47 @@
     <aside class="w-64 bg-[#0D2B53] text-white flex flex-col">
       <!-- Logo dan SIMANTAP -->
       <div class="flex items-center px-6 py-6 text-xl font-bold space-x-2">
-        <img src="assets/titik_tiga.png" alt="Logo" class="w-6 h-6"/>
+        <img src="{{ asset('assets/titik_tiga_3.png') }}" alt="Logo" class="w-4 h-4" />
         <span>SIMANTAP</span>
       </div>
 
-      <!-- Tombol Dashboard -->
-      
-      <button class="mx-4 my-2 py-2 px-4 bg-orange-400 rounded-md text-white font-semibold hover:bg-orange-500 w-[85%] text-left"><span class="material-icons text-black">menu_book</span>
-        Dashboard 
-      </button>
+        <nav class="mt-2 px-4">
+          <!-- Tombol Dashboard -->
+          <div class="mb-4">
+            <a href="#" class="flex items-center gap-2 rounded hover:bg-[#FF9B17] hover:text-white transition duration-500 text-white font-medium px-4 py-2 rounded-md w-full">
+              <span class="material-icons text-black">menu_book</span>
+              Dashboard
+            </a>
+          </div>
 
-      <!-- Menu Admin -->
-      <nav class="mt-2 px-4">
-          
-        <h2 class="text-sm font-bold text-gray-300 mb-2">MENU UNTUK ADMIN</h2>
-        <ul class="space-y-2 text-sm">
-          <li><a href="tugas/detail_tugas.php" class="block py-1 hover:underline">Detail Tugas</a></li>
-          <li><a href="#" class="block py-1 hover:underline">Laporan Harian</a></li>
-          <li><a href="#" class="block py-1 hover:underline">Permohonan Tenggat</a></li>
-          <li><a href="#" class="block py-1 hover:underline">Kinerja Pegawai</a></li>
-          <li><a href="#" class="block py-1 hover:underline">Kelola Pengguna</a></li>
-        </ul>
-      </nav>
+          <!-- Label Menu -->
+          <h2 class="text-sm font-bold text-gray-300 mb-2 uppercase tracking-wide">Menu Untuk Admin</h2>
+
+          <!-- Daftar Menu -->
+          <ul id="sidebarMenu" class="space-y-2 text-sm">
+            <li><a href="tugas/detail_tugas.php" class="menu-item block w-full hover:bg-[#FF9B17] hover:text-white transition duration-500 rounded px-4 py-2">Detail Tugas</a></li>
+            <li><a href="#" class="menu-item block w-full hover:bg-[#FF9B17] hover:text-white transition duration-500 rounded px-4 py-2">Laporan Harian</a></li>
+            <li><a href="#" class="menu-item block w-full hover:bg-[#FF9B17] hover:text-white transition duration-500 rounded px-4 py-2">Permohonan Tenggat</a></li>
+            <li><a href="#" class="menu-item block w-full hover:bg-[#FF9B17] hover:text-white transition duration-500 rounded px-4 py-2">Kinerja Pegawai</a></li>
+            <li><a href="#" class="menu-item block w-full hover:bg-[#FF9B17] hover:text-white transition duration-500 rounded px-4 py-2">Kelola Pengguna</a></li>
+          </ul>
+
+        <script>
+          const menuItems = document.querySelectorAll('.menu-item');
+
+          menuItems.forEach(item => {
+            item.addEventListener('click', function () {
+              // Hapus kelas aktif dari semua
+              menuItems.forEach(i => i.classList.remove('bg-orange-400', 'text-white'));
+              
+              // Tambahkan ke yang diklik
+              this.classList.add('bg-orange-400', 'text-white');
+            });
+          });
+        </script>
+
+        </nav>
+
     </aside>
 
     <!-- Main Content -->
